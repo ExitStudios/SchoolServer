@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+        integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="shortcut icon" href="../img/favicon_white.png" type="image/x-icon">
+    <title>School Server - Login</title>
+</head>
+
+<body>
+    <div class="mb-5">
+        <h3 class="mb-3">Login</h3>
+        <input type="text" placeholder="Name" autocomplete="off" id="login-name" class="form-control mb-3">
+        <input type="password" placeholder="Passwort" autocomplete="off" id="login-password" class="form-control mb-3">
+
+        <div class="custom-control custom-switch mb-3">
+            <input type="checkbox" id="custom-switch1" class="custom-control-input">
+            <label for="custom-switch1" class="custom-control-label">Angemeldet Bleiben</label>
+        </div>
+
+        <button id="login-btn" class="btn btn-outline-primary mb-3 w-100">
+            Login
+        </button>
+
+        <a href="./register.html">Anmelden</a>
+    </div>
+
+    <script src="../js/login.js" type="module"></script>
+</body>
+
+</html>

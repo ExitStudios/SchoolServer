@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/logged-in.css">
+    <link rel="shortcut icon" href="../img/favicon_white.png" type="image/x-icon">
+    <title>School Server - Kontakt</title>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="check-btn">
+            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+        </label>
+
+        <label class="logo">
+            <a href="./index.html" draggable="false"><img src="../img/favicon_white.png" draggable="false"></a>
+        </label>
+        <ul>
+            <li><a href="./home.html" draggable="false">Home</a></li>
+            <li><a href="./representation.html" draggable="false">Vertretung</a></li>
+            <li><a href="./marks.html" draggable="false">Noten</a></li>
+            <li><a class="active" href="./contact.html" draggable="false">Ankündigungen</a></li>
+            <li><a href="./profile.html" draggable="false">Profil</a></li>
+            <li><a href="#" draggable="false">Admin</a></li>
+        </ul>
+    </nav>
+
+
+    <section class="content">
+        <div class="contact-form">
+            <h1 id="msg-header">Nachricht senden</h1>
+            <form action="" id="send-msg-form">
+                <input type="text" id="data-sender" class="msg-ipt" placeholder="Dein Name" autocomplete="off">
+                <input type="text" id="data-receiver" class="msg-ipt" placeholder="Name des Empfänger"
+                    autocomplete="off">
+                <input type="text" id="topic" class="msg-ipt" placeholder="Betreff" autocomplete="off">
+                <textarea class="msg-ipt" id="msg" cols="40" rows="15" placeholder="Nachricht"
+                    autocomplete="off"></textarea>
+
+                <button type="submit" id="send-msg">Senden</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="../js/contact.js"></script>
+</body>
+
+</html>
